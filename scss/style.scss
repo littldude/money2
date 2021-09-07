@@ -1,6 +1,5 @@
 $dark: #2C1410;
 $red: #AB7051;
-/*FONTS*/
 @font-face {
     font-family: 'Muller';
     font-style: normal;
@@ -1437,10 +1436,12 @@ button:focus {
             width: 95%;
         }
     }
-    .results__img {
-        margin-top: 50px;
-        width: 69%;
-    }
+    .results {
+        &__img {
+            margin-top: 50px;
+            width: 69%;
+        }
+    }   
     .footer {
         padding-bottom: 50px;
         &__inner {
