@@ -296,8 +296,7 @@
                         <li class="list__item list__item--circle list__item--circle__grey text text--grey">2 индивидуальные сессии</li>
                     </ul>
                     <div class="buy__inner--item__bottom">
-                        <p class="subtitle subtitle--overline subtitle--buy"> 20 000 р.</p>
-                        <p class="title title--blue title--price">10 500 р.</p>
+                        <p class="title title--blue title--price">20 000 р.</p>
                         <div class="buy__inner--currency">
                             <p class="text text--currency" id="UAH1"></p><p class="text text--medium text--currency" id="EUR1"></p><p class="text text--medium text--currency" id="USD1"></p>
                         </div>
@@ -324,8 +323,7 @@
                         <li class="list__item list__item--circle list__item--circle__grey text text--grey">2 индивидуальные сессии</li>
                     </ul>
                     <div class="buy__inner--item__bottom">
-                        <p class="subtitle subtitle--overline subtitle--buy"> 45 000 р.</p>
-                        <p class="title title--blue title--price">15 500 р.</p>
+                        <p class="title title--blue title--price">45 000 р.</p>
                         <div class="buy__inner--currency">
                             <p class="text text--currency" id="UAH2"></p><p class="text text--medium text--currency" id="EUR2"></p><p class="text text--medium text--currency" id="USD2"></p>
                         </div>
@@ -352,8 +350,7 @@
                         <li class="list__item list__item--circle list__item--circle__dark text">2 индивидуальные сессии</li>
                     </ul>
                     <div class="buy__inner--item__bottom">
-                        <p class="subtitle subtitle--overline subtitle--buy"> 80 000 р.</p>
-                        <p class="title title--blue title--price">29 500 р.</p>
+                        <p class="title title--blue title--price">80 000 р.</p>
                         <div class="buy__inner--currency">
                             <p class="text text--currency" id="UAH3"></p><p class="text text--medium text--currency" id="EUR3"></p><p class="text text--medium text--currency" id="USD3"></p>
                         </div>
@@ -405,17 +402,17 @@
 </script>
 <script>
 $.getJSON("https://www.cbr-xml-daily.ru/daily_json.js", function(data) {
-    $('#USD1').html((10500 / data.Valute.USD.Value).toFixed() + '$');
-    $('#EUR1').html((10500 / data.Valute.EUR.Value).toFixed() + '€');
-    $('#UAH1').html((10500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
+    $('#USD1').html((20000 / data.Valute.USD.Value).toFixed() + '$');
+    $('#EUR1').html((20000 / data.Valute.EUR.Value).toFixed() + '€');
+    $('#UAH1').html((20000 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
     
-    $('#USD2').html((14500 / data.Valute.USD.Value).toFixed() + '$');
-    $('#EUR2').html((14500 / data.Valute.EUR.Value).toFixed() + '€');
-    $('#UAH2').html((14500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
+    $('#USD2').html((45000 / data.Valute.USD.Value).toFixed() + '$');
+    $('#EUR2').html((45000 / data.Valute.EUR.Value).toFixed() + '€');
+    $('#UAH2').html((45000 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
 
-    $('#USD3').html((29500 / data.Valute.USD.Value).toFixed() + '$');
-    $('#EUR3').html((29500 / data.Valute.EUR.Value).toFixed() + '€');
-    $('#UAH3').html((29500 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
+    $('#USD3').html((80000 / data.Valute.USD.Value).toFixed() + '$');
+    $('#EUR3').html((80000 / data.Valute.EUR.Value).toFixed() + '€');
+    $('#UAH3').html((80000 / (data.Valute.UAH.Value / data.Valute.UAH.Nominal)).toFixed() + '₴');
 });
 </script>
 </body>
