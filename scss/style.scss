@@ -577,6 +577,9 @@ button:focus {
             &:first-child,
             &:last-child {
                 background: #AB7051;
+                p {
+                    color: #ffffff;
+                }
             }
         }
     }
@@ -612,6 +615,7 @@ button:focus {
 }
 .course {
     padding: 100px 0 80px 0;
+    overflow: hidden;
     &__inner {
         margin-top: 50px;
         display: flex;
@@ -640,7 +644,7 @@ button:focus {
     &__img {
         display: block;
         position: absolute;
-        right: 0;
+        right: -500px;
         bottom: -60px;
     }
 }
@@ -917,6 +921,11 @@ button:focus {
     .container {
         padding: 0 1%;
     }
+    .course {
+        &__img {
+            right: -65%;
+        }
+    }
     .for {
         &__inner {
             padding: 65px 70px 65px 40px;
@@ -949,11 +958,9 @@ button:focus {
         }
     }
     .course {
-        overflow: hidden;
         &__img {
-            bottom: -80px;
-            width: 50%;
-            right: -40px;
+            right: -51%;
+            width: 70%;
         }
     }
 }
@@ -1089,9 +1096,12 @@ button:focus {
         &__inner {
             flex-direction: column;
             align-items: center;
+            &--item {
+                padding: 63px 53px 10px 40px;
+            }
         }
         &__img {
-            margin-top: 30px;
+            margin: 30px auto 0 auto;
             position: static;
         }
     }
@@ -1173,7 +1183,7 @@ button:focus {
         &__inner {
             &--item {
                 width: 95%;
-                padding: 50px 50px 50px 30px;
+                padding: 50px 50px 10px 30px;
             }
         }
         &__img {
@@ -1288,7 +1298,7 @@ button:focus {
     }
     .list {
         &__results {
-            width: auto;
+            width: 90%;
         }
         &__item {
             &--check {
@@ -1581,6 +1591,22 @@ button:focus {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            &--item {
+                &:last-child,
+                &:first-child {
+                    background-color: #ffffff;
+                    p {
+                        color: #2C1410;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .intro {
+        &__img {
+            width: 390px;
         }
     }
 }
@@ -1588,6 +1614,7 @@ button:focus {
     .intro {
         &__img {
             right: -130px;
+            width: 385px;
         }
     }
 }
@@ -1596,11 +1623,6 @@ button:focus {
         &--about {
             font-size: 12px;
             line-height: 16px;
-        }
-    }
-    .intro {
-        &__img {
-            width: 385px;
         }
     }
     .about {
@@ -1646,6 +1668,9 @@ button:focus {
 }
 @media (max-width: 390px) {
     .intro {
+        &__img {
+            width: 320px;
+        }
         &__inner {
             padding: 20px 0 35px 0;
         }
@@ -1706,17 +1731,12 @@ button:focus {
     .course {
         &__inner {
             &--item {
-                padding: 40px 14px 41px 15px;
+                padding: 40px 14px 10px 15px;
             }
         }
     }
 }
 @media (max-width: 375px) {
-    .intro {
-        &__img {
-            width: 320px;
-        }
-    }
     .for {
         &__inner {
             padding: 50px 10px 35px 10px;
