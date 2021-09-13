@@ -606,6 +606,10 @@ button:focus {
   background: #AB7051;
   color: #ffffff;
 }
+.program__links--item:active {
+  background: #AB7051;
+  color: #ffffff;
+}
 
 .course {
   padding: 100px 0 80px 0;
