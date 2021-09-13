@@ -83,7 +83,9 @@ button:focus {
   display: none;
 }
 .svg--plus {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20px;
   height: 20px;
 }
@@ -1033,6 +1035,13 @@ button:focus {
   .subtitle--results {
     padding: 0 2%;
   }
+  .subtitle--program {
+    background-color: #231F20;
+    padding: 8px 41px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin: 0 0 0 20px;
+  }
 
   .button--intro {
     margin-top: 30px;
@@ -1068,13 +1077,17 @@ button:focus {
   }
 
   .open {
-    display: block;
+    display: flex;
+    flex: 0 0 auto;
   }
 
   .svg {
     display: block;
   }
 
+  .program {
+    padding: 60px 0 0 0;
+  }
   .program__links {
     display: none;
   }
@@ -1083,6 +1096,10 @@ button:focus {
   }
   .program__inner--m {
     display: block;
+    margin-bottom: 60px;
+  }
+  .program__inner--m:last-of-type {
+    margin-bottom: 0;
   }
   .program__item--m {
     display: block;
@@ -1101,6 +1118,12 @@ button:focus {
   }
   .program__item--body {
     display: none;
+  }
+  .program__title {
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .autor {
@@ -1329,10 +1352,6 @@ button:focus {
   .subtitle--buy {
     font-size: 21px;
   }
-  .subtitle--program {
-    margin-bottom: 20px;
-    margin-right: 0;
-  }
 
   .text {
     font-size: 16px;
@@ -1430,7 +1449,7 @@ button:focus {
   }
   .about__inner--item {
     padding: 20px;
-    height: 80px;
+    height: auto;
   }
   .about__inner--item::before {
     display: none;
@@ -1517,6 +1536,11 @@ button:focus {
   }
 }
 @media (max-width: 414px) {
+  .subtitle--program {
+    padding: 8px;
+    font-size: 16px;
+  }
+
   .text--about {
     font-size: 12px;
     line-height: 16px;
